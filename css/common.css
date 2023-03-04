@@ -23,19 +23,6 @@ button {
   cursor: pointer;
 }
 
-/* .gallery {
-  background-color: darkkhaki;
-  padding: 30px;
-}
-
-.gallery-item {
-  list-style: none;
-  text-align: center;
-}
-
-.gallery-item:not(:last-child) {
-  margin-bottom: 30px;
-} */
 
 img {
   display: block;
