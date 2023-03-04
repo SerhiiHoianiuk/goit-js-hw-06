@@ -1,19 +1,23 @@
-const form = document.querySelector(".login-form");
-form.addEventListener("submit", handleSumbit);
+const formEl = document.querySelector('.login-form');
+const inputEmail = document.querySelector('[name="email"]');
+const inputPassword = document.querySelector('[name="password"]');
 
-function handleSumbit(event) {
+formEl.addEventListener('submit', onFormSubmit);
+
+function onFormSubmit(event){
     event.preventDefault();
-    const {
-        elements: { email, password }
-}= event.currentTarget;
 
+    const formElements = event.currentTarget.elements;
 
-    if (email.value === "" || password.value === "") {
-        return alert("Please, fill in all form fields!");
-    
-    } else {
-        console.log(`login :${email.value}, Password :${password.value}`)
-        event.currentTarget.reset();
-
+    const email = formElements.email.value;
+    const password = formElements.password.value;
+    const formData ={
+        email,
+        password,
     }
+
+    if (email === '' || password === '') {
+        window.alert("Please, fill in all form fields!")
+    }else(console.log(formData))
+    formEl.reset();
 }
