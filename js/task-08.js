@@ -16,7 +16,7 @@ function onFormSubmit(event){
         password,
     }
 
-    if (email === '' || password === '') {
+    if (email.trim() === '' || password.trim() === '') {
         window.alert("Please, fill in all form fields!")
     }else(console.log(formData))
     formEl.reset();

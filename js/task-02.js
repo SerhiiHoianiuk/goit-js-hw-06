@@ -15,5 +15,20 @@ const elems = ingredients.map(ingredient => {
   return itemEl;
 });
 
+
 const ulEl = document.querySelector('#ingredients');
 ulEl.append(...elems);
+
+// const elements = [];
+
+// for (let i = 0; i < ingredients.length; i+= 1) {
+//   const element = ingredients[i];
+//   console.log(element);const itemEl = document.createElement("li");
+//   itemEl.classList.add("item");
+//   itemEl.textContent = element;
+//   elements.push(itemEl);
+// }
+
+
+// const ulEl = document.querySelector('#ingredients')
+// ulEl.append(...elements);
